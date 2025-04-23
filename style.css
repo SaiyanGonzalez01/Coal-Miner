@@ -9,7 +9,7 @@ body {
   color: white;
 }
 
-.coal {
+#coal {
 
   image-rendering: crisp-edges;
   width: 300px;
@@ -18,9 +18,9 @@ body {
   cursor: pointer;	
 }
 
-.coal:hover {
+#coal:hover {
       transform: scale(0.9);
     }
 
-.coal:active {
+#coal:active {
       transform: scale(1);
