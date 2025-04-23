@@ -8,3 +8,10 @@ body {
   
   color: white;
 }
+
+coal {
+
+  image-rendering: crisp-edges;
+  
+	
+}
