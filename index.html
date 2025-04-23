@@ -1,13 +1,44 @@
-<!DOCTYPEhtml>
-  <html>
-    <head>
-      <title>Coal Miner</title>
-      
-    </head>
-    <body>
-      <center><p1>Coal Clicker</p1></center>
-        <center>
-          <img src="https://minecraft.wiki/images/Coal_JE3_BE2.png?ddd79" id="coal">
-        </center>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coal Miner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      cursor: pointer;
+    }
+    .counter {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Coal Miner</h1>
+  <img src="https://minecraft.wiki/images/Coal_JE3_BE2.png?ddd79" alt="Click Me" id="clickableImage">
+  <div class="counter">
+    Count: <span id="counterValue">0</span>
+  </div>
+
+  <script>
+    
+    const image = document.getElementById('clickableImage');
+    const counter = document.getElementById('counterValue');
+
+    let count = 0;
+
+    image.addEventListener('click', () => {
+      count++;
+      counter.textContent = count;
+    });
+  </script>
+</body>
+</html>
