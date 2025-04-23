@@ -9,9 +9,18 @@ body {
   color: white;
 }
 
-coal {
+.coal {
 
   image-rendering: crisp-edges;
-  
-	
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;	
 }
+
+.coal:hover {
+      transform: scale(0.9);
+    }
+
+.coal:active {
+      transform: scale(1);
