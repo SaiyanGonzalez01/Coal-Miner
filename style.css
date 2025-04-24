@@ -2,7 +2,7 @@ body {
 	
   font-family: arial;
   background-image: url("background.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   image-rendering: crisp-edges;
   background-color: rgba(0, 0, 0, .2);
   
