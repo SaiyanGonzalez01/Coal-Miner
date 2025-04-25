@@ -19,16 +19,25 @@
       Coal Mined: <span id="counterValue">0</span>
     </div>
   </center>
+
+  <audio id="clickSound" src="sounds/stone1.ogg"></audio>
+  
   <script>
     
-    const image = document.getElementById('clickableImage');
+    const image = document.getElementById('imageClick');
     const counter = document.getElementById('counterValue');
+    const clickSound = document.getElementById('soundEffect');
 
     let count = 0;
 
     image.addEventListener('click', () => {
       count++;
       counter.textContent = count;
+    
+    image.addEventListener('click', () => {
+      count++; 
+      counter.textContent = count; 
+      clickSound.play(); 
     });
   </script>
 </body>
