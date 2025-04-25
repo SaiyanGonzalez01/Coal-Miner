@@ -26,18 +26,12 @@
     
     const image = document.getElementById('imageClick');
     const counter = document.getElementById('counterValue');
-    const clickSound = document.getElementById('soundEffect');
 
     let count = 0;
 
     image.addEventListener('click', () => {
       count++;
       counter.textContent = count;
-    
-    image.addEventListener('click', () => {
-      count++; 
-      counter.textContent = count; 
-      clickSound.play(); 
     });
   </script>
 </body>
